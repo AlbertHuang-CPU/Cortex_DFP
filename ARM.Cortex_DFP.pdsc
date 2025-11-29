@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<package schemaVersion="1.7.56" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Open-CMSIS-Pack/Open-CMSIS-Pack-Spec/v1.7.56/schema/PACK.xsd">
+<package schemaVersion="1.7.55" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Open-CMSIS-Pack/Open-CMSIS-Pack-Spec/v1.7.55/schema/PACK.xsd">
   <name>Cortex_DFP</name>
   <description>ARM Cortex Reference Subsystems Device Family Pack</description>
   <vendor>ARM</vendor>
@@ -259,7 +259,7 @@ These modules are used to execute user-defined instructions that work on general
     </family>
 
     <!-- ******************************  STAR-MC3  ****************************** -->
-    <family Dfamily="ARM China STARMC3" Dvendor="ArmChina:160">
+    <family Dfamily="ARM China STAR-MC3" Dvendor="ArmChina:160">
       <description>
 The STAR-MC3 processor is a fully synthesizable mid-range microcontroller class processor that implements the Arm®v8.1-M Mainline architecture which includes support for the M-profile Vector Extension (MVE) and Pointer Authentication and Branch Target Identification (PACBTI) Extension.
 The processor also supports previous Arm®v8-M architectural features.
@@ -272,7 +272,7 @@ These modules are used to execute user-defined instructions that work on general
       <book name="https://www.armchina.com/download/Documents/TRM?infoId=240"       title="Arm China STAR-MC3 Processor Technical Reference Manual"/>
 
       <device Dname="STARMC3">
-        <processor Dcore="STARMC3" DcoreVersion="r0p0" Dmpu="MPU" Dfpu="DP_FPU" Dmve="FP_MVE" Dpacbti="PACBTI" Ddsp="DSP" Dtz="TZ" Dendian="Configurable" Dclock="10000000"/>
+        <processor Dcore="Star-MC3" DcoreVersion="r0p0" Dmpu="MPU" Dfpu="DP_FPU" Dmve="FP_MVE" Dpacbti="PACBTI" Ddsp="DSP" Dtz="TZ" Dendian="Configurable" Dclock="10000000"/>
         <compile header="Device/STARMC3/Include/STARMC3.h" define="STARMC3"/>
 
         <memory name="ROM_S"  access="rxs"  start="0x00000000" size="0x00200000" default="1" startup="1"/>
